@@ -1,5 +1,49 @@
 body {
-    margin: 0px;
+    height: auto;
+    width: auto;
+    margin: auto;
     padding: 0px;
-    background-color: gray;
+    background-image: url("background/sciana2.jpg");
+    background-repeat: no-repeat;
+  }
+
+  #frame {
+    top: 0px;
+    left: 0px;
+    width: 730px;
+    height: 515px;
+    margin-left: 25%;
+    margin-top: 5%;
+    background-image: url("background/frame1.png");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+  }
+
+  #canva {
+    position: relative;
+    border-radius: 10px;
+    top: 79px;
+    left: 75px;
+    z-index: 0;
+  }
+
+  #btns {
+    margin-left: 25%;
+    color: white;
+  }
+
+  #btns > button, #newImg, #brighslider{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    border: 2px white solid;
+  }
+
+  #brighslider {
+    margin-right: 600px;
   }
