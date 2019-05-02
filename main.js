@@ -1,0 +1,1 @@
+const play = document.querySelector('button').addEventListener('click', () => console.log('duppa'));
