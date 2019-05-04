@@ -1,4 +1,6 @@
+/* transform: translate(-50%, -50%); - pozycjonuje element względem środka */
 body {
+    display: flex;
     width: auto;
     height: auto;
     margin: auto;
@@ -6,22 +8,71 @@ body {
     background-repeat: no-repeat;
 }
 
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 20px;
+}
+
 .musicButtons {
-    margin-left: 40%;
+    margin-left: 33%;
     margin-top: 150px;
 }
 
-button.play {
-    width: 50px;
-    height: 50px;
-    background: url('/Icons/test.png') center;
-    border-radius: 25px;
-    border: none;
-    float: left;
+button.music {
+    background: url('Icons/music.png') center;
 }
 
-label.play {
+label {
     line-height: 120px;
     text-align: center;
+}
 
+.recordButtons {
+    margin-left: -29%;
+    margin-top: 720px;
+}
+
+button.record {
+    margin-left: 50px;
+    background: url('Icons/record.png') center;
+}
+
+label.record,
+label.play {
+    margin-left: -8px;
+}
+
+button.play,
+button.play1,
+button.play2,
+button.play3,
+button.play4 {
+    background: url('Icons/play.png') center;
+}
+
+label.play1 {
+    margin-left: -8px;
+}
+
+.play1 {
+    margin-left: -30%;
+    margin-top: 300px;
+}
+
+.play2 {
+    margin-left: -2.6%;
+    margin-top: 550px;
+}
+
+.play3 {
+    margin-left: 35%;
+    margin-top: 300px;
+}
+
+.play4 {
+    margin-left: -2.6%;
+    margin-top: 550px;
 }
