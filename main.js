@@ -58,6 +58,8 @@
             let temp = channelSwitcher(recordChannel.dataset.channel);
             // Choose audio channel 
             let audioUrl = recordChannel.dataset.channel;
+            //  Check if recording mark recording channel as red color
+            recordChannel.style.color == '' ? recordChannel.style.color = 'red' : recordChannel.style.color = '';
             // Start recording f.
             recording(temp, audioUrl);
         });
@@ -115,7 +117,10 @@
     function recording(audioChunk, audioUrl) {
         //  Check if already recording then stop
         if(mediaRecorder && mediaRecorder.state == "recording") {
+            //  Stop recording
             mediaRecorder.stop();
+            //  Turn off recording icon
+            streamReference.getAudioTracks()[0].stop();
         } 
         //  else start recording
         else {
@@ -159,3 +164,4 @@
         });
     }
 }
+
